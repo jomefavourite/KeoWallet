@@ -1,0 +1,56 @@
+body {
+  background: #e5e5e5;
+}
+
+h1 {
+  color: rgba(55, 73, 136, 1);
+}
+
+p {
+  color: rgba(28, 37, 68, 1);
+}
+
+.cross {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+.cross::before,
+.cross::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.cross::before {
+  transform: rotate(45deg);
+}
+.cross::after {
+  transform: rotate(-45deg);
+}
+
+.input-group-text {
+  background: none;
+}
+
+input[type='number'] {
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+
+span[class*='input-group-text'] {
+  border: none !important;
+}
+
+button {
+  background: rgba(55, 73, 136, 1) !important;
+  color: #fff !important;
+}
